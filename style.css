@@ -40,19 +40,23 @@ button:hover{
 .top-modal{
     display: flex;
     align-items: center;
-    column-gap: 100px;
+    column-gap: 75px;
 }
 
 .top-modal h1{
-    margin-left: 125px;
+    margin-left: 110px;
 }
 
 #close-modal{
     width: max-content;
+    height: max-content;
     padding: 0px 8px;
     background-color: rgba(255, 255, 255, 0.775);
     border-radius: 50%;
     justify-content: flex-end;
+    font-size: 25px;
+    transform: rotate(45deg);
+
     
 }
 
@@ -75,7 +79,7 @@ button:hover{
 
 .modal{
     width: 500px;
-    height: 600px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,8 +98,12 @@ button:hover{
     height: 25px;
     border-radius: 6px;
     background-color: rgba(14, 94, 255, 0.65);
+
 }
 
+#confirm-add{
+    display: none;
+}
 .modal .books{
     display: flex;
     flex-direction: row;
@@ -155,8 +163,13 @@ button:hover{
     display: flex;
     align-items: center;
     gap: 15px;
+    padding-left: 1310px;
+    padding-bottom: 20px;
+    padding-top: 10px;
     
 }
+
+
 
 .book-search{
     border-style: solid;
@@ -165,7 +178,7 @@ button:hover{
     border-color: blanchedalmond;
     width: 170px;
     height: 18px;
-    background-image: url(magnify.svg);
+    background-image: url(imgs/magnify.svg);
     background-repeat: no-repeat;
     background-origin: content-box;
     background-position: right;
@@ -206,9 +219,10 @@ input:focus{
 }
 
 .book-filter button{
-    color: green;
+    color: rgb(88, 43, 1);
     background-color: blanchedalmond;
     padding: 5px 0px 5px 0px;
+    font-size: 16px;
 }
 
 .book-library{
