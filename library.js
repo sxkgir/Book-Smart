@@ -35,9 +35,9 @@ function addBookToShelf(bookTitle){
             book.style.visibility = 'visible';
             const bookImage = new Image();
             book.id = bookTitle;
-            bookImage.src = bookTitle + '.png';
+            bookImage.src = "imgs/" + bookTitle + '.png';
             bookImage.onerror = function() {
-                this.src = bookTitle + '.jpg'; 
+                this.src = "imgs/" + bookTitle + '.jpg'; 
             };
 
             book.insertBefore(bookImage,book.firstChild );
@@ -55,10 +55,10 @@ function displayModalBook(bookTitle,match) {
             while(modalBookDisplay.firstChild){
                 modalBookDisplay.removeChild(modalBookDisplay.lastChild);
             }
-            bookImage.src = bookTitle + '.png';
+            bookImage.src = "imgs/" + bookTitle + '.png';
     
             bookImage.onerror = function() {
-                this.src = bookTitle + '.jpg';
+                this.src = "imgs/" + bookTitle + '.jpg';
             };
         
             bookImage.onload = function() {
@@ -71,7 +71,7 @@ function displayModalBook(bookTitle,match) {
         while(modalBookDisplay.firstChild){
             modalBookDisplay.removeChild(modalBookDisplay.lastChild);
         }
-        bookImage.src = "error.jpg";
+        bookImage.src = "imgs/error.jpg";
 
         bookImage.onload = function() {
             modalBookDisplay.appendChild(bookImage);
