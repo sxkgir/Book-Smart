@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="modal-container">
+        <div class="modal">
+            <div class="top-modal">
+                <h1>Add New Book</h1>
+                <button id="close-modal">X</button>    
+            </div>
+            <form action="" method="get" id="book-add-form">
+                <label for="book-search"></label>
+                <input type="text" class="book-search" id="book-add-search">
+                <div class="books" id="test">
+                </div>
+                <button id="confirm-add" type="submit">Add Book</button>
+            </form>
+        </div>
+    </div>
+    <div class="top-navigation-main">
+        <ul>
+            <li><a href=""><h2>Home</h2></a></li>
+            <li><a href=""><h2>Blog</h2></a></li>
+            <li><a href=""><h1>BookSmart</h1></a></li>
+            <li><a href=""><h2>FAQ</h2></a></li>
+            <li><a href=""><h2>Contact</h2></a></li>
+        </ul>
+    </div>
+    <div class="user-stats-display">
+        <div class="goal">
+            <h1>Books Read Till Goal</h1>
+            <h1>: <span id="amount-read">0</span>/100</h1>
+        </div>  
+        <div>
+            <a href="" id="profile">
+                <h1>Darren Wang</h1>
+                <img src="pfp.jpg" alt="" id="pfp">
+            </a>
+        </div>
+    </div>
+
+    <div class="commands">
+        <h1 id="heading">Your Books</h1>
+        <form action="" method="get">
+            <label for="book-search"></label>
+            <input type="text" class="book-search" name="search-result" placeholder="Search and add Books">
+        </form>
+        <button id="add-book">Add Book</button>
+        <button>Setting</button>
+        <button>Print</button>
+        <button>Batch edit</button>
+    </div>
+    <div class="book-filter">
+        <ul>
+            <li><button>all(<span id="all-amount">0</span>)</button></li>
+            <li><button>read(<span id="read-amount">0</span>)</button></li>
+            <li><button>read later(<span id="read-later-amount">0</span>)</button></li>
+            <div class="genre"><h2>Genre</h2></div>
+            <li><button>horror(<span id="horror-amount">0</span>)</button></li>
+            <li><button>romance(<span id="romance-amount">0</span>)</button></li>
+        </ul>
+    </div>
+
+    <div class="book-library">
+        <div class="books" id="" data-column="1" data-row="1" style="visibility: hidden;">
+            <div class="book-action">
+                <button><img src="dots-vertical.svg" alt=""></button>
+                <button><img src="delete.svg" id="delete-book" alt=""></button>
+            </div>
+        </div>
+        <div class="books" id="" data-column="2" data-row="1" style="visibility: hidden;">
+
+            <div class="book-action">
+                <button><img src="dots-vertical.svg" alt=""></button>
+                <button><img src="delete.svg" id="delete-book" alt=""></button>
+            </div>
+        </div>
+        <div class="books" id="" data-column="3" data-row="1" style="visibility: hidden;">
+            <div class="book-action">
+                <button><img src="dots-vertical.svg" alt=""></button>
+                <button><img src="delete.svg" id="delete-book" alt=""></button>
+
+            </div>
+        </div>
+        <div class="books" id="" data-column="4" data-row="1" style="visibility: hidden;">
+            <div class="book-action">
+                <button><img src="dots-vertical.svg" alt=""></button>
+                <button><img src="delete.svg" id="delete-book" alt=""></button>
+
+            </div>
+        </div>
+        <div class="books" id="" data-column="5" data-row="1" style="visibility: hidden;">
+            <div class="book-action">
+                <button><img src="dots-vertical.svg" alt=""></button>
+                <button><img src="delete.svg" id="delete-book" alt=""></button>                                                                  
+            </div>
+        </div>
+        <div class="books" id="" data-column="1" data-row="2" style="visibility: hidden;">
+            <div class="book-action">
+                <button><img src="dots-vertical.svg" alt=""></button>
+                <button><img src="delete.svg" id="delete-book" alt=""></button>
+
+            </div>
+        </div>
+        <div class="books" id="" data-column="2" data-row="2" style="visibility: hidden;">
+            <div class="book-action">
+                <button><img src="dots-vertical.svg" alt=""></button>
+                <button><img src="delete.svg" id="delete-book" alt=""></button>
+
+            </div>
+        </div>
+        <div class="books" id="" data-column="3" data-row="2" style="visibility: hidden;">
+            <div class="book-action">
+                <button><img src="dots-vertical.svg" alt=""></button>
+                <button><img src="delete.svg" id="delete-book" alt=""></button>
+            </div>
+        </div>
+        <div class="books" id="" data-column="4" data-row="2" style="visibility: hidden;">
+            <div class="book-action">
+                <button><img src="dots-vertical.svg" alt=""></button>
+                <button><img src="delete.svg" id="delete-book" alt=""></button>
+
+            </div>
+        </div>
+        <div class="books" id="" data-column="5" data-row="2" style="visibility: hidden;">
+            <div class="book-action">
+                <button><img src="dots-vertical.svg" alt=""></button>
+                <button><img src="delete.svg" id="delete-book" alt=""></button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="library.js">X</script>
+</body>
+</html>

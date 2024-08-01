@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+}
+
+::placeholder{
+    color: rgba(90, 90, 90, 0.493);
+}
+
+#pfp{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    margin: 0;
+}
+
+button{
+    border-width: 0;
+}
+
+
+button:hover{
+    cursor: pointer;
+}
+
+.top-modal{
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+}
+
+.top-modal h1{
+    margin-left: 125px;
+}
+
+#close-modal{
+    width: max-content;
+    padding: 0px 8px;
+    background-color: rgba(255, 255, 255, 0.775);
+    border-radius: 50%;
+    justify-content: flex-end;
+    
+}
+
+.modal-container{
+    display: none;
+}
+
+.modal-container.show{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.388);
+    position: fixed;
+    padding-top: 200px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    overflow: auto;
+    justify-content: center;
+
+}
+
+.modal{
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(225, 225, 225);
+}
+
+.modal form{
+    display:flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+
+.modal button{
+    width: 100px;
+    height: 25px;
+    border-radius: 6px;
+    background-color: rgba(14, 94, 255, 0.65);
+}
+
+.modal .books{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+
+
+
+.top-navigation-main a{
+    color: white;
+}
+
+.top-navigation-main ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(48, 48, 48);
+}
+
+
+
+.user-stats-display h1 {
+    text-wrap: wrap;
+    width: 200px;
+}
+
+.user-stats-display {
+    padding-left: 80px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    padding-right: 60px; /* Add padding to the right to match the left padding */
+    background-color: grey;
+}
+
+.goal {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+#profile h1{
+    width: 100px;
+    text-align: center;
+}
+
+#profile {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    padding-right: 40px;
+}
+.commands{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.book-search{
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 4px;
+    border-color: blanchedalmond;
+    width: 170px;
+    height: 18px;
+    background-image: url(magnify.svg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: right;
+    padding-right: 3px;
+
+}
+
+.commands button{
+    background-color: grey;
+    color: rgb(1, 90, 1);
+}
+
+input:focus{
+    border-style: solid;
+    outline: 0;
+    border-width: 1.5px;
+    border-color: blanchedalmond;
+    border-radius: 4px;
+}
+
+#heading{
+    margin: 0;
+    padding: 20px 0px 20px 40px;
+    margin-right: 900px;
+}
+
+.book-filter{
+    background-color: blanchedalmond;
+    width: 300px;
+    height: 100vh;
+    float: left;
+}
+
+
+.genre h2{
+    margin: 8px 0px 8px 0px;
+    font-size: 18px;
+}
+
+.book-filter button{
+    color: green;
+    background-color: blanchedalmond;
+    padding: 5px 0px 5px 0px;
+}
+
+.book-library{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 300px 300px;
+    gap: 25px;
+    column-gap: 80px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+.books img{
+    height: 270px;
+    width: 190px;
+    align-self: center;
+}
+.books{
+    display: flex;
+    flex-direction: column;
+}
+
+.book-action{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+    margin-left: auto;
+    padding-top: 5px;
+}
+
+
+.book-action button{
+    background-color: white ;
+    padding: 1px 2px;
+}
+.book-action img{
+    width: 25px;
+    height: 25px;
+
+}
+
+
